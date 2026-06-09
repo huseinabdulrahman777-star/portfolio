@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – BUT RT | [Ton Prénom]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ SIDEBAR ═══ -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <div class="avatar-ring">
+        <div class="avatar-placeholder">
+          <span>?</span>
+          <div class="avatar-hint">Photo</div>
+        </div>
+      </div>
+      <div class="sidebar-name">
+        <span class="mono-label">étudiant</span>
+        <strong>[Ton Prénom Nom]</strong>
+        <span class="sidebar-sub">BUT RT – Parcours Cyber</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#accueil" class="nav-link active" data-section="accueil">
+        <span class="nav-icon">⌂</span> Accueil
+      </a></li>
+      <li><a href="#profil" class="nav-link" data-section="profil">
+        <span class="nav-icon">◈</span> Profil Pro
+      </a></li>
+
+      <li class="nav-group-label">SAÉ – Semestre 1</li>
+      <li><a href="#sae101" class="nav-link" data-section="sae101">
+        <span class="nav-icon">›</span> SAÉ 1.01 – Hygiène info.
+      </a></li>
+      <li><a href="#sae102" class="nav-link" data-section="sae102">
+        <span class="nav-icon">›</span> SAÉ 1.02 – Réseaux info.
+      </a></li>
+      <li><a href="#sae103" class="nav-link" data-section="sae103">
+        <span class="nav-icon">›</span> SAÉ 1.03 – Transmission
+      </a></li>
+      <li><a href="#sae104" class="nav-link" data-section="sae104">
+        <span class="nav-icon">›</span> SAÉ 1.04 – Internet
+      </a></li>
+      <li><a href="#sae105" class="nav-link" data-section="sae105">
+        <span class="nav-icon">›</span> SAÉ 1.05 – Données
+      </a></li>
+
+      <li class="nav-group-label">SAÉ – Semestre 2</li>
+      <li><a href="#sae201" class="nav-link" data-section="sae201">
+        <span class="nav-icon">›</span> SAÉ 2.01 – Réseau PME
+      </a></li>
+      <li><a href="#sae202" class="nav-link" data-section="sae202">
+        <span class="nav-icon">›</span> SAÉ 2.02 – Signaux
+      </a></li>
+      <li><a href="#sae203" class="nav-link" data-section="sae203">
+        <span class="nav-icon">›</span> SAÉ 2.03 – Solution info.
+      </a></li>
+      <li><a href="#sae204" class="nav-link" data-section="sae204">
+        <span class="nav-icon">›</span> SAÉ 2.04 – Projet intégratif
+      </a></li>
+
+      <li class="nav-group-label">Bilans</li>
+      <li><a href="#bilan-s1" class="nav-link" data-section="bilan-s1">
+        <span class="nav-icon">◉</span> Bilan S1
+      </a></li>
+      <li><a href="#bilan-s2" class="nav-link" data-section="bilan-s2">
+        <span class="nav-icon">◉</span> Bilan S2
+      </a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <a href="#" class="btn-linkedin">LinkedIn →</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HAMBURGER ═══ -->
+  <button id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+  <!-- ═══════════════════════════════════════════════ MAIN ═══ -->
+  <main id="main-content">
+
+    <!-- ── ACCUEIL ── -->
+    <section id="accueil" class="page-section active">
+      <div class="hero">
+        <div class="hero-eyebrow">
+          <span class="dot-green"></span>
+          <span class="mono-label">portfolio · BUT Réseaux &amp; Télécommunications</span>
+        </div>
+        <h1 class="hero-title">
+          <span id="typed-name">[Ton Prénom Nom]</span>
+          <span class="cursor">_</span>
+        </h1>
+        <p class="hero-subtitle" id="typed-subtitle"></p>
+        <p class="hero-desc">
+          Ce portfolio documente ma trajectoire de développement en BUT Réseaux &amp; Télécommunications,
+          parcours Cybersécurité. À travers les <strong>Situations d'Apprentissage et d'Évaluation (SAÉ)</strong>,
+          je rends compte de ma progression, des compétences mobilisées et de ma démarche réflexive sur deux semestres.
+        </p>
+        <div class="hero-ctas">
+          <a href="#sae101" class="btn-primary" onclick="navigateTo('sae101')">Voir mes SAÉ →</a>
+          <a href="#profil" class="btn-secondary" onclick="navigateTo('profil')">Mon profil</a>
+        </div>
+
+        <div class="competences-grid">
+          <div class="comp-card comp-rt1">
+            <span class="comp-code">RT1</span>
+            <span class="comp-name">Administrer les réseaux et l'Internet</span>
+          </div>
+          <div class="comp-card comp-rt2">
+            <span class="comp-code">RT2</span>
+            <span class="comp-name">Connecter les entreprises et les usagers</span>
+          </div>
+          <div class="comp-card comp-rt3">
+            <span class="comp-code">RT3</span>
+            <span class="comp-name">Créer des outils et des applications R&amp;T</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROFIL PRO ── -->
+    <section id="profil" class="page-section">
+      <div class="section-header">
+        <span class="section-eyebrow">◈ profil.md</span>
+        <h2>Présentation &amp; Projection professionnelle</h2>
+      </div>
+
+      <div class="profil-grid">
+        <div class="profil-card">
+          <h3 class="card-title">À propos</h3>
+          <p class="placeholder-text">
+            [À compléter : présente-toi en quelques lignes – formation, pourquoi le parcours Cyber,
+            tes centres d'intérêt techniques, etc.]
+          </p>
+        </div>
+
+        <div class="profil-card">
+          <h3 class="card-title">Compétences principales</h3>
+          <div class="skills-list">
+            <span class="skill-tag">[Compétence 1]</span>
+            <span class="skill-tag">[Compétence 2]</span>
+            <span class="skill-tag">[Compétence 3]</span>
+            <span class="skill-tag">À compléter</span>
+          </div>
+        </div>
+
+        <div class="profil-card full-width">
+          <h3 class="card-title">Évolutions observées au cours de la formation</h3>
+          <p class="placeholder-text">
+            [Quels progrès as-tu observés depuis ton entrée en formation ? Comment ton regard sur les
+            réseaux et la cybersécurité a-t-il évolué ?]
+          </p>
+        </div>
+
+        <div class="profil-card full-width">
+          <h3 class="card-title">Projection professionnelle</h3>
+          <p class="placeholder-text">
+            [Vers quels métiers, secteurs ou technologies souhaites-tu évoluer ? Quelles compétences
+            te semblent centrales pour ton avenir professionnel ?]
+          </p>
+          <a href="#" class="btn-linkedin inline">Voir mon LinkedIn →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ TEMPLATE SAÉ (S1) ════════════════════ -->
+
+    <!-- SAÉ 1.01 -->
+    <section id="sae101" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt1">
+        <div class="sae-meta">
+          <span class="sae-badge">SAÉ 1.01</span>
+          <span class="sae-semester">Semestre 1</span>
+        </div>
+        <h2>Se sensibiliser à l'hygiène informatique et à la cybersécurité</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt1">RT1</span>
+          <span class="comp-tag rt2">RT2</span>
+        </div>
+      </div>
+
+      <div class="sae-body">
+        <div class="sae-block">
+          <h3 class="block-title">📋 Description &amp; Objectifs</h3>
+          <p class="placeholder-text">[Décris le contexte général de la SAÉ : type d'organisation, mission confiée, contraintes,
+          compétences visées et ce qui était attendu de toi.]</p>
+        </div>
+
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt1"><code>AC11.02</code> Architecture systèmes numériques et Internet</div>
+            <div class="ac-tag rt1"><code>AC11.04</code> Rôles et principes des systèmes d'exploitation</div>
+            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements du réseau local</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Pour chaque AC listé, explique brièvement comment il a été mis en œuvre dans cette SAÉ.]</p>
+        </div>
+
+        <div class="sae-block">
+          <h3 class="block-title">🔧 Tâches réalisées</h3>
+          <ul class="sae-list placeholder-text">
+            <li>[Étape / tâche principale 1 – outil utilisé]</li>
+            <li>[Étape / tâche principale 2 – méthode mise en place]</li>
+            <li>[Étape / tâche principale 3 – démarche technique]</li>
+          </ul>
+        </div>
+
+        <div class="sae-block">
+          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
+          <div class="traces-area">
+            <div class="trace-card placeholder-text">
+              <span class="trace-icon">📄</span>
+              <div>
+                <strong>[Titre du livrable / trace 1]</strong>
+                <p>[Décris brièvement ce document et ce qu'il prouve en termes de compétence.]</p>
+              </div>
+            </div>
+            <div class="trace-card placeholder-text">
+              <span class="trace-icon">📄</span>
+              <div>
+                <strong>[Titre du livrable / trace 2]</strong>
+                <p>[Décris brièvement ce document et son impact dans la mission.]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item">
+              <span class="r-label">Difficultés rencontrées</span>
+              <p class="placeholder-text">[Quels obstacles as-tu rencontrés ? Qu'est-ce qui était difficile ?]</p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Solutions mises en place</span>
+              <p class="placeholder-text">[Comment as-tu surmonté ces difficultés ? Qu'aurais-tu pu faire autrement ?]</p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Ce que j'ai appris</span>
+              <p class="placeholder-text">[Savoirs, savoir-faire ou posture professionnelle acquis.]</p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Niveau de maîtrise</span>
+              <div class="mastery-bar">
+                <div class="mastery-fill" style="--level: 60%"></div>
+                <span class="mastery-label">En cours d'acquisition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 1.02 -->
+    <section id="sae102" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt1">
+        <div class="sae-meta">
+          <span class="sae-badge">SAÉ 1.02</span>
+          <span class="sae-semester">Semestre 1</span>
+        </div>
+        <h2>S'initier aux réseaux informatiques</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt1">RT1</span>
+        </div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block">
+          <h3 class="block-title">📋 Description &amp; Objectifs</h3>
+          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.02]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt1"><code>AC11.01</code> Lois fondamentales de l'électricité</div>
+            <div class="ac-tag rt1"><code>AC11.02</code> Architecture systèmes numériques</div>
+            <div class="ac-tag rt1"><code>AC11.03</code> Configurer les fonctions de base du réseau local</div>
+            <div class="ac-tag rt1"><code>AC11.04</code> Rôles des systèmes d'exploitation</div>
+            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements</div>
+            <div class="ac-tag rt1"><code>AC11.06</code> Installer un poste client</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🔧 Tâches réalisées</h3>
+          <ul class="sae-list placeholder-text">
+            <li>[Tâche 1]</li>
+            <li>[Tâche 2]</li>
+          </ul>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
+          <div class="traces-area">
+            <div class="trace-card placeholder-text">
+              <span class="trace-icon">📄</span>
+              <div><strong>[Trace 1]</strong><p>[Description]</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item">
+              <span class="r-label">Difficultés rencontrées</span>
+              <p class="placeholder-text">[À compléter]</p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Solutions mises en place</span>
+              <p class="placeholder-text">[À compléter]</p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Ce que j'ai appris</span>
+              <p class="placeholder-text">[À compléter]</p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Niveau de maîtrise</span>
+              <div class="mastery-bar">
+                <div class="mastery-fill" style="--level: 50%"></div>
+                <span class="mastery-label">En cours d'acquisition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 1.03 -->
+    <section id="sae103" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt2">
+        <div class="sae-meta">
+          <span class="sae-badge">SAÉ 1.03</span>
+          <span class="sae-semester">Semestre 1</span>
+        </div>
+        <h2>Découvrir un dispositif de transmission</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt2">RT2</span>
+        </div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block">
+          <h3 class="block-title">📋 Description &amp; Objectifs</h3>
+          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.03]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt2"><code>AC12.01</code> Mesurer et analyser les signaux</div>
+            <div class="ac-tag rt2"><code>AC12.03</code> Déployer des supports de transmission</div>
+            <div class="ac-tag rt2"><code>AC12.05</code> Communiquer avec un tiers</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🔧 Tâches réalisées</h3>
+          <ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
+          <div class="traces-area">
+            <div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div>
+          </div>
+        </div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 1.04 -->
+    <section id="sae104" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt3">
+        <div class="sae-meta">
+          <span class="sae-badge">SAÉ 1.04</span>
+          <span class="sae-semester">Semestre 1</span>
+        </div>
+        <h2>Se présenter sur Internet</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt3">RT3</span>
+        </div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block">
+          <h3 class="block-title">📋 Description &amp; Objectifs</h3>
+          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.04]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt3"><code>AC13.01</code> Utiliser un système informatique et ses outils</div>
+            <div class="ac-tag rt3"><code>AC13.04</code> Architecture et technologies d'un site Web</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🔧 Tâches réalisées</h3>
+          <ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
+          <div class="traces-area">
+            <div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div>
+          </div>
+        </div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 1.05 -->
+    <section id="sae105" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt3">
+        <div class="sae-meta">
+          <span class="sae-badge">SAÉ 1.05</span>
+          <span class="sae-semester">Semestre 1</span>
+        </div>
+        <h2>Traiter des données</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt3">RT3</span>
+        </div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block">
+          <h3 class="block-title">📋 Description &amp; Objectifs</h3>
+          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.05]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt3"><code>AC13.01</code> Utiliser un système informatique</div>
+            <div class="ac-tag rt3"><code>AC13.02</code> Lire, exécuter, corriger un programme</div>
+            <div class="ac-tag rt3"><code>AC13.03</code> Traduire un algorithme</div>
+            <div class="ac-tag rt3"><code>AC13.04</code> Architecture et technologies Web</div>
+            <div class="ac-tag rt3"><code>AC13.05</code> Mécanismes de gestion de données</div>
+            <div class="ac-tag rt3"><code>AC13.06</code> Environnement collaboratif</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">🔧 Tâches réalisées</h3>
+          <ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul>
+        </div>
+        <div class="sae-block">
+          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
+          <div class="traces-area">
+            <div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div>
+          </div>
+        </div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ SAÉ S2 ════════════════════ -->
+
+    <!-- SAÉ 2.01 -->
+    <section id="sae201" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt1">
+        <div class="sae-meta">
+          <span class="sae-badge">SAÉ 2.01</span>
+          <span class="sae-semester">Semestre 2</span>
+        </div>
+        <h2>Construire un réseau informatique pour une PME</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt1">RT1</span>
+          <span class="comp-tag rt2">RT2</span>
+        </div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block"><h3 class="block-title">📋 Description &amp; Objectifs</h3><p class="placeholder-text">[Contexte et objectifs]</p></div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt1"><code>AC11.02</code> Architecture systèmes numériques</div>
+            <div class="ac-tag rt1"><code>AC11.03</code> Configurer les fonctions de base</div>
+            <div class="ac-tag rt1"><code>AC11.04</code> Rôles des systèmes d'exploitation</div>
+            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements</div>
+            <div class="ac-tag rt1"><code>AC11.06</code> Installer un poste client</div>
+            <div class="ac-tag rt2"><code>AC12.01</code> Mesurer et analyser les signaux</div>
+            <div class="ac-tag rt2"><code>AC12.02</code> Systèmes de transmission élémentaires</div>
+            <div class="ac-tag rt2"><code>AC12.03</code> Déployer des supports de transmission</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block"><h3 class="block-title">🔧 Tâches réalisées</h3><ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul></div>
+        <div class="sae-block"><h3 class="block-title">📁 Résultats &amp; Traces</h3><div class="traces-area"><div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div></div></div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 2.02 -->
+    <section id="sae202" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt2">
+        <div class="sae-meta"><span class="sae-badge">SAÉ 2.02</span><span class="sae-semester">Semestre 2</span></div>
+        <h2>Mesurer et caractériser un signal ou un système de transmission</h2>
+        <div class="sae-comp-tags"><span class="comp-tag rt2">RT2</span></div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block"><h3 class="block-title">📋 Description &amp; Objectifs</h3><p class="placeholder-text">[Contexte et objectifs]</p></div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt2"><code>AC12.01</code> Mesurer et analyser les signaux</div>
+            <div class="ac-tag rt2"><code>AC12.02</code> Systèmes de transmission élémentaires</div>
+            <div class="ac-tag rt2"><code>AC12.03</code> Déployer des supports de transmission</div>
+            <div class="ac-tag rt2"><code>AC12.05</code> Communiquer avec un tiers</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block"><h3 class="block-title">🔧 Tâches réalisées</h3><ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul></div>
+        <div class="sae-block"><h3 class="block-title">📁 Résultats &amp; Traces</h3><div class="traces-area"><div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div></div></div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 2.03 -->
+    <section id="sae203" class="page-section sae-section">
+      <div class="sae-header" data-comp="rt3">
+        <div class="sae-meta"><span class="sae-badge">SAÉ 2.03</span><span class="sae-semester">Semestre 2</span></div>
+        <h2>Mettre en place une solution informatique pour une PME</h2>
+        <div class="sae-comp-tags"><span class="comp-tag rt3">RT3</span></div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block"><h3 class="block-title">📋 Description &amp; Objectifs</h3><p class="placeholder-text">[Contexte et objectifs]</p></div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt3"><code>AC13.01</code> Utiliser un système informatique</div>
+            <div class="ac-tag rt3"><code>AC13.02</code> Lire, exécuter, corriger un programme</div>
+            <div class="ac-tag rt3"><code>AC13.03</code> Traduire un algorithme</div>
+            <div class="ac-tag rt3"><code>AC13.04</code> Architecture Web</div>
+            <div class="ac-tag rt3"><code>AC13.05</code> Gestion de données</div>
+            <div class="ac-tag rt3"><code>AC13.06</code> Environnement collaboratif</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+        </div>
+        <div class="sae-block"><h3 class="block-title">🔧 Tâches réalisées</h3><ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul></div>
+        <div class="sae-block"><h3 class="block-title">📁 Résultats &amp; Traces</h3><div class="traces-area"><div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div></div></div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 2.04 -->
+    <section id="sae204" class="page-section sae-section">
+      <div class="sae-header" data-comp="all">
+        <div class="sae-meta"><span class="sae-badge">SAÉ 2.04</span><span class="sae-semester">Semestre 2</span></div>
+        <h2>Projet intégratif</h2>
+        <div class="sae-comp-tags">
+          <span class="comp-tag rt1">RT1</span>
+          <span class="comp-tag rt2">RT2</span>
+          <span class="comp-tag rt3">RT3</span>
+        </div>
+      </div>
+      <div class="sae-body">
+        <div class="sae-block"><h3 class="block-title">📋 Description &amp; Objectifs</h3><p class="placeholder-text">[Contexte et objectifs du projet intégratif]</p></div>
+        <div class="sae-block">
+          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
+          <div class="ac-grid">
+            <div class="ac-tag rt1"><code>AC11.01–06</code> Toutes les AC RT1 niveau 1</div>
+            <div class="ac-tag rt2"><code>AC12.01–05</code> Toutes les AC RT2 niveau 1</div>
+            <div class="ac-tag rt3"><code>AC13.01–06</code> Toutes les AC RT3 niveau 1</div>
+          </div>
+          <p class="placeholder-text ac-desc">[Pour chaque compétence, explique concrètement ce que tu as apporté au projet.]</p>
+        </div>
+        <div class="sae-block"><h3 class="block-title">🔧 Tâches réalisées</h3><ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul></div>
+        <div class="sae-block"><h3 class="block-title">📁 Résultats &amp; Traces</h3><div class="traces-area"><div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div></div></div>
+        <div class="sae-block highlight-block">
+          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
+          <div class="reflexive-grid">
+            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ BILANS ════════════════════ -->
+
+    <!-- BILAN S1 -->
+    <section id="bilan-s1" class="page-section bilan-section">
+      <div class="section-header">
+        <span class="section-eyebrow">◉ bilan_s1.md</span>
+        <h2>Bilan par compétence – Semestre 1</h2>
+      </div>
+      <div class="bilan-grid">
+        <div class="bilan-card bilan-rt1">
+          <div class="bilan-comp-header">
+            <span class="bilan-comp-badge rt1">RT1</span>
+            <h3>Administrer les réseaux et l'Internet</h3>
+            <span class="bilan-level">Niveau 1 – Assister l'administrateur</span>
+          </div>
+          <div class="bilan-body">
+            <div class="bilan-item">
+              <span class="bilan-label">✅ AC maîtrisés</span>
+              <p class="placeholder-text">[Liste les AC que tu considères bien maîtrisés, avec justification courte.]</p>
+            </div>
+            <div class="bilan-item">
+              <span class="bilan-label">⚠️ AC à renforcer</span>
+              <p class="placeholder-text">[Quels AC restent à consolider ? Pourquoi ?]</p>
+            </div>
+            <div class="bilan-item">
+              <span class="bilan-label">📈 Progrès constatés</span>
+              <p class="placeholder-text">[Quelle évolution observes-tu sur cette compétence depuis le début du semestre ?]</p>
+            </div>
+            <div class="bilan-item">
+              <span class="bilan-label">🎯 Points d'appui pour la suite</span>
+              <p class="placeholder-text">[Sur quoi vas-tu t'appuyer au S2 pour progresser sur RT1 ?]</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bilan-card bilan-rt2">
+          <div class="bilan-comp-header">
+            <span class="bilan-comp-badge rt2">RT2</span>
+            <h3>Connecter les entreprises et les usagers</h3>
+            <span class="bilan-level">Niveau 1 – Découvrir les transmissions et la ToIP</span>
+          </div>
+          <div class="bilan-body">
+            <div class="bilan-item"><span class="bilan-label">✅ AC maîtrisés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">⚠️ AC à renforcer</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">📈 Progrès constatés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">🎯 Points d'appui pour la suite</span><p class="placeholder-text">[À compléter]</p></div>
+          </div>
+        </div>
+
+        <div class="bilan-card bilan-rt3">
+          <div class="bilan-comp-header">
+            <span class="bilan-comp-badge rt3">RT3</span>
+            <h3>Créer des outils et applications pour les R&amp;T</h3>
+            <span class="bilan-level">Niveau 1 – S'intégrer dans un service informatique</span>
+          </div>
+          <div class="bilan-body">
+            <div class="bilan-item"><span class="bilan-label">✅ AC maîtrisés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">⚠️ AC à renforcer</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">📈 Progrès constatés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">🎯 Points d'appui pour la suite</span><p class="placeholder-text">[À compléter]</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BILAN S2 -->
+    <section id="bilan-s2" class="page-section bilan-section">
+      <div class="section-header">
+        <span class="section-eyebrow">◉ bilan_s2.md</span>
+        <h2>Bilan par compétence – Semestre 2</h2>
+      </div>
+      <div class="bilan-grid">
+        <div class="bilan-card bilan-rt1">
+          <div class="bilan-comp-header">
+            <span class="bilan-comp-badge rt1">RT1</span>
+            <h3>Administrer les réseaux et l'Internet</h3>
+            <span class="bilan-level">Bilan de fin d'année S1→S2</span>
+          </div>
+          <div class="bilan-body">
+            <div class="bilan-item"><span class="bilan-label">✅ AC maîtrisés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">⚠️ AC à renforcer</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">📈 Évolution S1→S2</span><p class="placeholder-text">[Comment as-tu progressé entre S1 et S2 sur cette compétence ?]</p></div>
+            <div class="bilan-item"><span class="bilan-label">🚀 Projection S3</span><p class="placeholder-text">[Dans quels autres contextes pourrais-tu réinvestir ces acquis en S3 ?]</p></div>
+          </div>
+        </div>
+
+        <div class="bilan-card bilan-rt2">
+          <div class="bilan-comp-header">
+            <span class="bilan-comp-badge rt2">RT2</span>
+            <h3>Connecter les entreprises et les usagers</h3>
+            <span class="bilan-level">Bilan de fin d'année S1→S2</span>
+          </div>
+          <div class="bilan-body">
+            <div class="bilan-item"><span class="bilan-label">✅ AC maîtrisés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">⚠️ AC à renforcer</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">📈 Évolution S1→S2</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">🚀 Projection S3</span><p class="placeholder-text">[À compléter]</p></div>
+          </div>
+        </div>
+
+        <div class="bilan-card bilan-rt3">
+          <div class="bilan-comp-header">
+            <span class="bilan-comp-badge rt3">RT3</span>
+            <h3>Créer des outils et applications pour les R&amp;T</h3>
+            <span class="bilan-level">Bilan de fin d'année S1→S2</span>
+          </div>
+          <div class="bilan-body">
+            <div class="bilan-item"><span class="bilan-label">✅ AC maîtrisés</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">⚠️ AC à renforcer</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">📈 Évolution S1→S2</span><p class="placeholder-text">[À compléter]</p></div>
+            <div class="bilan-item"><span class="bilan-label">🚀 Projection S3</span><p class="placeholder-text">[À compléter]</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
