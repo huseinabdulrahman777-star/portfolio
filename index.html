@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – BUT RT | Abdulrahman hussein</title>
+  <title>Portfolio – BUT RT | [Ton Prénom]</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -22,7 +22,7 @@
       </div>
       <div class="sidebar-name">
         <span class="mono-label">étudiant</span>
-        <strong>Abdulrahman hussein</strong>
+        <strong>[Ton Prénom Nom]</strong>
         <span class="sidebar-sub">BUT RT – Parcours Cyber</span>
       </div>
     </div>
@@ -42,14 +42,11 @@
       <li><a href="#sae102" class="nav-link" data-section="sae102">
         <span class="nav-icon">›</span> SAÉ 1.02 – Réseaux info.
       </a></li>
-      <li><a href="#sae103" class="nav-link" data-section="sae103">
-        <span class="nav-icon">›</span> SAÉ 1.03 – Transmission
-      </a></li>
       <li><a href="#sae104" class="nav-link" data-section="sae104">
-        <span class="nav-icon">›</span> SAÉ 1.04 – Internet
+        <span class="nav-icon">›</span> SAÉ 1.04 – Site Internet
       </a></li>
       <li><a href="#sae105" class="nav-link" data-section="sae105">
-        <span class="nav-icon">›</span> SAÉ 1.05 – Données
+        <span class="nav-icon">›</span> SAÉ 1.05 – Traiter des données
       </a></li>
 
       <li class="nav-group-label">SAÉ – Semestre 2</li>
@@ -94,7 +91,7 @@
           <span class="mono-label">portfolio · BUT Réseaux &amp; Télécommunications</span>
         </div>
         <h1 class="hero-title">
-          <span id="typed-name">Abdulrahman hussein</span>
+          <span id="typed-name">[Ton Prénom Nom]</span>
           <span class="cursor">_</span>
         </h1>
         <p class="hero-subtitle" id="typed-subtitle"></p>
@@ -182,51 +179,97 @@
         <h2>Se sensibiliser à l'hygiène informatique et à la cybersécurité</h2>
         <div class="sae-comp-tags">
           <span class="comp-tag rt1">RT1</span>
-          <span class="comp-tag rt2">RT2</span>
         </div>
       </div>
 
       <div class="sae-body">
+
         <div class="sae-block">
           <h3 class="block-title">📋 Description &amp; Objectifs</h3>
-          <p class="placeholder-text">[Décris le contexte général de la SAÉ : type d'organisation, mission confiée, contraintes,
-          compétences visées et ce qui était attendu de toi.]</p>
+          <p>
+            Cette SAÉ avait pour objectif de nous initier aux fondamentaux de la sécurisation d'un
+            système informatique dans un contexte professionnel simulé. Le travail portait sur la mise
+            en place d'un accès distant sécurisé via le protocole <strong>SSH</strong> sur une machine
+            sous <strong>Debian</strong>, en appliquant des bonnes pratiques de durcissement
+            (hardening) du service.
+          </p>
+          <p style="margin-top: 10px;">
+            Il s'agissait de comprendre le fonctionnement d'un serveur SSH, d'en modifier la
+            configuration pour limiter les vecteurs d'attaque courants, et de documenter la démarche
+            de diagnostic lorsqu'un problème survient — compétence essentielle dans tout environnement
+            réseau réel.
+          </p>
         </div>
 
         <div class="sae-block">
           <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
           <div class="ac-grid">
-            <div class="ac-tag rt1"><code>AC11.02</code> Architecture systèmes numériques et Internet</div>
-            <div class="ac-tag rt1"><code>AC11.04</code> Rôles et principes des systèmes d'exploitation</div>
-            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements du réseau local</div>
+            <div class="ac-tag rt1"><code>AC11.02</code> Architecture des systèmes numériques et principes de l'Internet</div>
+            <div class="ac-tag rt1"><code>AC11.04</code> Rôles et principes fondamentaux des systèmes d'exploitation</div>
+            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements du réseau local et savoir les signaler</div>
           </div>
-          <p class="placeholder-text ac-desc">[Pour chaque AC listé, explique brièvement comment il a été mis en œuvre dans cette SAÉ.]</p>
+          <div class="ac-detail-list">
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.02</span>
+              <p>La manipulation du service SSH sur Debian m'a conduit à comprendre comment les protocoles
+              réseau (TCP/IP) gèrent les connexions sur des ports spécifiques, et comment un service
+              écoute sur une interface réseau. J'ai ainsi consolidé ma compréhension de la couche
+              transport et du modèle OSI en contexte réel.</p>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.04</span>
+              <p>Pour modifier la configuration d'OpenSSH et redémarrer le service, j'ai dû interagir
+              directement avec le système d'exploitation Debian via le terminal : édition de fichiers
+              de configuration système (<code>/etc/ssh/sshd_config</code>), utilisation de
+              <code>systemctl</code> pour gérer les services, et navigation dans l'arborescence Linux.</p>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.05</span>
+              <p>Face à l'échec de connexion SSH, j'ai appliqué une démarche de diagnostic structurée :
+              identification du symptôme, hypothèses sur la cause, vérification par l'analyse des
+              logs et des paramètres de configuration, puis correction ciblée. Cette approche
+              méthodique est directement transférable à tout dysfonctionnement réseau.</p>
+            </div>
+          </div>
         </div>
 
         <div class="sae-block">
           <h3 class="block-title">🔧 Tâches réalisées</h3>
-          <ul class="sae-list placeholder-text">
-            <li>[Étape / tâche principale 1 – outil utilisé]</li>
-            <li>[Étape / tâche principale 2 – méthode mise en place]</li>
-            <li>[Étape / tâche principale 3 – démarche technique]</li>
+          <ul class="sae-list">
+            <li>Installation et configuration d'un serveur <strong>OpenSSH</strong> sur une machine Debian</li>
+            <li>Modification du port d'écoute SSH (port 22 → port 3333) dans le fichier <code>/etc/ssh/sshd_config</code> pour réduire l'exposition aux scans automatisés</li>
+            <li>Redémarrage du service via <code>systemctl restart ssh</code> et vérification de l'état avec <code>systemctl status ssh</code></li>
+            <li>Diagnostic de l'échec de connexion : identification que la commande SSH utilisait toujours le port 22 par défaut alors que le serveur écoutait sur le port 3333</li>
+            <li>Correction de la commande de connexion en spécifiant explicitement le port avec l'option <code>-p 3333</code></li>
+            <li>Vérification de la connexion réussie et documentation de la procédure</li>
           </ul>
         </div>
 
         <div class="sae-block">
           <h3 class="block-title">📁 Résultats &amp; Traces</h3>
           <div class="traces-area">
-            <div class="trace-card placeholder-text">
-              <span class="trace-icon">📄</span>
+            <div class="trace-card">
+              <span class="trace-icon">🖥️</span>
               <div>
-                <strong>[Titre du livrable / trace 1]</strong>
-                <p>[Décris brièvement ce document et ce qu'il prouve en termes de compétence.]</p>
+                <strong>Figure 1 — Capture d'écran : échec de connexion SSH</strong>
+                <p>
+                  Cette capture illustre le message d'erreur obtenu lors d'une tentative de connexion
+                  avec <code>ssh utilisateur@adresse_ip</code> sans préciser le port. Elle prouve
+                  que j'ai su identifier le symptôme d'un problème de configuration réseau et
+                  l'analyser méthodiquement pour en trouver la cause.
+                </p>
               </div>
             </div>
-            <div class="trace-card placeholder-text">
-              <span class="trace-icon">📄</span>
+            <div class="trace-card">
+              <span class="trace-icon">✅</span>
               <div>
-                <strong>[Titre du livrable / trace 2]</strong>
-                <p>[Décris brièvement ce document et son impact dans la mission.]</p>
+                <strong>Figure 2 — Capture d'écran : connexion SSH réussie</strong>
+                <p>
+                  Cette capture montre la connexion fonctionnelle obtenue après correction, via la
+                  commande <code>ssh -p 3333 utilisateur@adresse_ip</code>. Elle démontre la
+                  maîtrise de la configuration d'un accès distant sécurisé et la capacité à
+                  résoudre un problème de configuration de service réseau.
+                </p>
               </div>
             </div>
           </div>
@@ -237,25 +280,43 @@
           <div class="reflexive-grid">
             <div class="reflexive-item">
               <span class="r-label">Difficultés rencontrées</span>
-              <p class="placeholder-text">[Quels obstacles as-tu rencontrés ? Qu'est-ce qui était difficile ?]</p>
+              <p>
+                La principale difficulté a été de comprendre pourquoi la connexion échouait alors que
+                le service SSH était bien actif. Sans expérience préalable des services réseau, je
+                n'avais pas immédiatement conscience que la commande SSH utilise le port 22 par défaut,
+                indépendamment de la configuration serveur. Cette confusion entre comportement client
+                et configuration serveur est un piège classique pour les débutants.
+              </p>
             </div>
             <div class="reflexive-item">
               <span class="r-label">Solutions mises en place</span>
-              <p class="placeholder-text">[Comment as-tu surmonté ces difficultés ? Qu'aurais-tu pu faire autrement ?]</p>
+              <p>
+                J'ai adopté une démarche de diagnostic par élimination : vérification que le service
+                SSH était bien actif, lecture de la documentation de la commande <code>ssh</code>
+                pour identifier les options disponibles, puis test avec l'option <code>-p</code>.
+                Avec le recul, j'aurais pu gagner du temps en vérifiant dès le début l'état du port
+                d'écoute avec <code>ss -tlnp</code> ou <code>netstat</code>.
+              </p>
             </div>
             <div class="reflexive-item">
               <span class="r-label">Ce que j'ai appris</span>
-              <p class="placeholder-text">[Savoirs, savoir-faire ou posture professionnelle acquis.]</p>
+              <p>
+                Cette SAÉ m'a apporté une compréhension concrète du protocole SSH, du rôle des ports
+                réseau dans les connexions distantes, et des bonnes pratiques de sécurisation d'un
+                serveur (changement de port, principe de moindre exposition). J'ai également développé
+                une méthode de diagnostic structurée, applicable à tout problème de connectivité réseau.
+              </p>
             </div>
             <div class="reflexive-item">
               <span class="r-label">Niveau de maîtrise</span>
               <div class="mastery-bar">
-                <div class="mastery-fill" style="--level: 60%"></div>
-                <span class="mastery-label">En cours d'acquisition</span>
+                <div class="mastery-fill" style="--level: 72%"></div>
+                <span class="mastery-label">Acquis — quelques points à approfondir (hardening avancé)</span>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -272,110 +333,173 @@
         </div>
       </div>
       <div class="sae-body">
+
         <div class="sae-block">
           <h3 class="block-title">📋 Description &amp; Objectifs</h3>
-          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.02]</p>
+          <p>
+            Cette SAÉ avait pour but de nous initier à l'administration de services réseau
+            fondamentaux sous Linux (Debian). Deux services essentiels ont été mis en place et
+            configurés : un <strong>serveur web Apache</strong> pour héberger un site accessible
+            depuis le réseau local, et un <strong>serveur DHCP</strong> pour automatiser
+            l'attribution des adresses IP aux postes clients.
+          </p>
+          <p style="margin-top: 10px;">
+            L'objectif était de comprendre comment des services réseau écoutent et communiquent
+            sur les interfaces réseau, et d'acquérir une méthode de diagnostic applicable à tout
+            problème de connectivité.
+          </p>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
           <div class="ac-grid">
-            <div class="ac-tag rt1"><code>AC11.01</code> Lois fondamentales de l'électricité</div>
-            <div class="ac-tag rt1"><code>AC11.02</code> Architecture systèmes numériques</div>
+            <div class="ac-tag rt1"><code>AC11.02</code> Architecture des systèmes numériques et Internet</div>
             <div class="ac-tag rt1"><code>AC11.03</code> Configurer les fonctions de base du réseau local</div>
-            <div class="ac-tag rt1"><code>AC11.04</code> Rôles des systèmes d'exploitation</div>
-            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements</div>
+            <div class="ac-tag rt1"><code>AC11.04</code> Rôles et principes des systèmes d'exploitation</div>
+            <div class="ac-tag rt1"><code>AC11.05</code> Identifier les dysfonctionnements du réseau local</div>
             <div class="ac-tag rt1"><code>AC11.06</code> Installer un poste client</div>
           </div>
-          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
-        </div>
-        <div class="sae-block">
-          <h3 class="block-title">🔧 Tâches réalisées</h3>
-          <ul class="sae-list placeholder-text">
-            <li>[Tâche 1]</li>
-            <li>[Tâche 2]</li>
-          </ul>
-        </div>
-        <div class="sae-block">
-          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
-          <div class="traces-area">
-            <div class="trace-card placeholder-text">
-              <span class="trace-icon">📄</span>
-              <div><strong>[Trace 1]</strong><p>[Description]</p></div>
+          <div class="ac-detail-list">
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.02</span>
+              <p>La configuration d'Apache et du DHCP m'a obligé à comprendre comment un service
+              réseau écoute sur une interface donnée (adresse IP + port), et comment les trames
+              circulent entre client et serveur. J'ai ainsi ancré concrètement les notions de
+              couche transport et d'adressage IP.</p>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.03</span>
+              <p>La configuration du DHCP (fichier <code>/etc/dhcp/dhcpd.conf</code>, plage
+              d'adresses, passerelle) et d'Apache (modification de <code>ports.conf</code>) sont
+              des opérations directes de configuration du réseau local, mobilisant pleinement
+              cet AC.</p>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.04</span>
+              <p>L'ensemble des manipulations a été réalisé en ligne de commande sous Debian :
+              édition de fichiers de configuration système, gestion des services avec
+              <code>systemctl</code>, et vérification d'état — autant d'interactions directes
+              avec le système d'exploitation Linux.</p>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.05</span>
+              <p>Les deux problèmes rencontrés (Apache inaccessible depuis le réseau, DHCP ne
+              distribuant plus d'IP) ont nécessité une démarche de diagnostic structurée :
+              lecture des journaux système, vérification des interfaces réseau, analyse des
+              fichiers de configuration.</p>
+            </div>
+            <div class="ac-detail">
+              <span class="ac-detail-code">AC11.06</span>
+              <p>La configuration d'une adresse IP statique sur le serveur Debian (fichier
+              <code>/etc/network/interfaces</code>) et la vérification de la connectivité
+              client/serveur illustrent la mise en service d'un poste dans un réseau local.</p>
             </div>
           </div>
         </div>
+
+        <div class="sae-block">
+          <h3 class="block-title">🔧 Tâches réalisées</h3>
+
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--cyan); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.08em;">— Problème 1 : Serveur Apache inaccessible depuis le réseau</p>
+          <ul class="sae-list" style="margin-bottom: 20px;">
+            <li>Installation du serveur web <strong>Apache2</strong> sur Debian et vérification du fonctionnement local</li>
+            <li>Test d'accès depuis un poste client avec <code>curl 192.168.10.62</code> → erreur <code>Failed to connect to port 80</code></li>
+            <li>Diagnostic : le service Apache écoutait uniquement sur <code>127.0.0.1</code> (loopback), bloquant les connexions externes</li>
+            <li>Correction dans <code>/etc/apache2/ports.conf</code> : remplacement de <code>Listen 127.0.0.1:80</code> par <code>Listen 80</code></li>
+            <li>Redémarrage du service avec <code>sudo systemctl restart apache2</code> et vérification de l'accès réseau</li>
+          </ul>
+
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--green); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.08em;">— Problème 2 : Serveur DHCP ne distribuant plus d'adresses IP</p>
+          <ul class="sae-list">
+            <li>Installation du service <strong>isc-dhcp-server</strong> et configuration de la plage d'adresses</li>
+            <li>Constat : le poste client ne recevait aucune adresse IP (vérifié avec <code>ip a</code>)</li>
+            <li>Lecture des journaux système : message <code>No subnet declaration for eth0</code> → interface réseau sans IP statique</li>
+            <li>Configuration d'une IP statique sur le serveur dans <code>/etc/network/interfaces</code> (adresse <code>192.168.1.65/24</code>)</li>
+            <li>Redémarrage des services : <code>sudo systemctl restart networking</code> puis <code>sudo systemctl restart isc-dhcp-server</code></li>
+            <li>Vérification de l'attribution IP correcte sur le poste client</li>
+          </ul>
+        </div>
+
+        <div class="sae-block">
+          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
+          <div class="traces-area">
+            <div class="trace-card">
+              <span class="trace-icon">🖥️</span>
+              <div>
+                <strong>Fig. 1 — Échec de connexion HTTP (<code>curl</code> depuis le client)</strong>
+                <p>Démontre la capacité à identifier un problème d'accessibilité réseau et à
+                formuler une hypothèse sur sa cause (interface d'écoute restrictive).</p>
+              </div>
+            </div>
+            <div class="trace-card">
+              <span class="trace-icon">✅</span>
+              <div>
+                <strong>Fig. 2 — Accès réussi au serveur Apache après correction de <code>ports.conf</code></strong>
+                <p>Atteste la maîtrise de la configuration d'un service web et la résolution
+                autonome d'un problème de disponibilité réseau.</p>
+              </div>
+            </div>
+            <div class="trace-card">
+              <span class="trace-icon">🖥️</span>
+              <div>
+                <strong>Fig. 3 — Absence d'adresse IP sur le client (DHCP défaillant)</strong>
+                <p>Illustre l'utilisation de <code>ip a</code> comme outil de diagnostic réseau
+                et la lecture des logs système pour identifier l'origine du problème.</p>
+              </div>
+            </div>
+            <div class="trace-card">
+              <span class="trace-icon">✅</span>
+              <div>
+                <strong>Fig. 4 — Attribution IP correcte après configuration IP statique serveur</strong>
+                <p>Prouve la capacité à configurer un serveur DHCP fonctionnel sur Debian et
+                à relier la configuration réseau du serveur au bon fonctionnement du service.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="sae-block highlight-block">
           <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
           <div class="reflexive-grid">
             <div class="reflexive-item">
               <span class="r-label">Difficultés rencontrées</span>
-              <p class="placeholder-text">[À compléter]</p>
+              <p>
+                La principale difficulté sur les deux problèmes était de comprendre que la
+                configuration d'un service et son accessibilité réseau sont deux choses distinctes.
+                Un service peut être actif (<code>systemctl status</code> vert) tout en étant
+                inaccessible si son interface d'écoute est mal configurée — ce n'est pas intuitif
+                au début.
+              </p>
             </div>
             <div class="reflexive-item">
               <span class="r-label">Solutions mises en place</span>
-              <p class="placeholder-text">[À compléter]</p>
+              <p>
+                J'ai systématisé la lecture des logs système (<code>journalctl</code>) avant de
+                modifier quoi que ce soit, ce qui m'a permis d'identifier rapidement la cause sur
+                le DHCP. Pour Apache, la vérification de l'interface d'écoute avec
+                <code>ss -tlnp</code> m'aurait permis d'aller encore plus vite.
+              </p>
             </div>
             <div class="reflexive-item">
               <span class="r-label">Ce que j'ai appris</span>
-              <p class="placeholder-text">[À compléter]</p>
+              <p>
+                Cette SAÉ m'a donné une vision concrète de la relation entre services réseau,
+                interfaces réseau et adressage IP. J'ai compris que tout service doit
+                explicitement "ouvrir" son écoute sur une interface réseau pour être joignable,
+                et que la configuration statique du serveur est un prérequis au bon fonctionnement
+                des services qu'il héberge.
+              </p>
             </div>
             <div class="reflexive-item">
               <span class="r-label">Niveau de maîtrise</span>
               <div class="mastery-bar">
-                <div class="mastery-fill" style="--level: 50%"></div>
-                <span class="mastery-label">En cours d'acquisition</span>
+                <div class="mastery-fill" style="--level: 70%"></div>
+                <span class="mastery-label">Acquis — à approfondir (sécurisation des services)</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SAÉ 1.03 -->
-    <section id="sae103" class="page-section sae-section">
-      <div class="sae-header" data-comp="rt2">
-        <div class="sae-meta">
-          <span class="sae-badge">SAÉ 1.03</span>
-          <span class="sae-semester">Semestre 1</span>
-        </div>
-        <h2>Découvrir un dispositif de transmission</h2>
-        <div class="sae-comp-tags">
-          <span class="comp-tag rt2">RT2</span>
-        </div>
-      </div>
-      <div class="sae-body">
-        <div class="sae-block">
-          <h3 class="block-title">📋 Description &amp; Objectifs</h3>
-          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.03]</p>
-        </div>
-        <div class="sae-block">
-          <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
-          <div class="ac-grid">
-            <div class="ac-tag rt2"><code>AC12.01</code> Mesurer et analyser les signaux</div>
-            <div class="ac-tag rt2"><code>AC12.03</code> Déployer des supports de transmission</div>
-            <div class="ac-tag rt2"><code>AC12.05</code> Communiquer avec un tiers</div>
-          </div>
-          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
-        </div>
-        <div class="sae-block">
-          <h3 class="block-title">🔧 Tâches réalisées</h3>
-          <ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul>
-        </div>
-        <div class="sae-block">
-          <h3 class="block-title">📁 Résultats &amp; Traces</h3>
-          <div class="traces-area">
-            <div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div>
-          </div>
-        </div>
-        <div class="sae-block highlight-block">
-          <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
-          <div class="reflexive-grid">
-            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -392,37 +516,121 @@
         </div>
       </div>
       <div class="sae-body">
+
         <div class="sae-block">
           <h3 class="block-title">📋 Description &amp; Objectifs</h3>
-          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.04]</p>
+          <p>
+            Cette SAÉ avait pour objectif de créer un site web de présentation personnelle, accessible
+            en ligne, constitué de plusieurs pages HTML reliées par un menu de navigation commun.
+            Le travail portait à la fois sur la structure du document (<strong>HTML</strong>),
+            la mise en forme visuelle (<strong>CSS</strong>) et l'ergonomie de l'interface utilisateur.
+          </p>
+          <p style="margin-top:10px;">
+            Le site devait être cohérent, navigable et respecter des critères d'ergonomie de base.
+            Un problème d'affichage du menu de navigation a été rencontré et résolu au cours du
+            développement, illustrant l'importance du débogage CSS dans la réalisation d'interfaces web.
+          </p>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
           <div class="ac-grid">
             <div class="ac-tag rt3"><code>AC13.01</code> Utiliser un système informatique et ses outils</div>
-            <div class="ac-tag rt3"><code>AC13.04</code> Architecture et technologies d'un site Web</div>
+            <div class="ac-tag rt3"><code>AC13.04</code> Comprendre l'architecture et les technologies d'un site Web</div>
           </div>
-          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+          <div class="ac-detail-list">
+            <div class="ac-detail" style="border-left-color: var(--rt3);">
+              <span class="ac-detail-code" style="color: var(--rt3);">AC13.01</span>
+              <p>Le développement du site a nécessité l'utilisation d'un éditeur de code, la gestion
+              de fichiers HTML/CSS organisés en arborescence de projet, et l'ouverture du site dans
+              un navigateur pour tester les modifications en temps réel — usage direct des outils
+              informatiques du développeur web.</p>
+            </div>
+            <div class="ac-detail" style="border-left-color: var(--rt3);">
+              <span class="ac-detail-code" style="color: var(--rt3);">AC13.04</span>
+              <p>La résolution du bug de menu (propriété <code>z-index</code> mal configurée) m'a
+              conduit à comprendre le modèle de rendu CSS : flux normal, positionnement, contexte
+              d'empilement (<em>stacking context</em>) et ordre d'affichage des couches. Ces notions
+              sont au cœur de l'architecture d'un site web côté client.</p>
+            </div>
+          </div>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">🔧 Tâches réalisées</h3>
-          <ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul>
+          <ul class="sae-list">
+            <li>Conception et développement d'un site web multi-pages en <strong>HTML/CSS</strong> avec menu de navigation commun à toutes les pages</li>
+            <li>Structuration du projet en fichiers séparés (une page par section, une feuille de style CSS commune)</li>
+            <li>Diagnostic d'un bug d'affichage : le menu de navigation devenait invisible ou passait derrière d'autres éléments après certaines modifications CSS</li>
+            <li>Identification de la cause : une valeur incorrecte de <code>z-index</code> sur le conteneur du menu créait un contexte d'empilement défavorable</li>
+            <li>Correction de la propriété CSS et vérification du rendu sur plusieurs pages du site</li>
+            <li>Tests de navigation et validation de l'ergonomie de l'interface</li>
+          </ul>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">📁 Résultats &amp; Traces</h3>
           <div class="traces-area">
-            <div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div>
+            <div class="trace-card">
+              <span class="trace-icon">🖥️</span>
+              <div>
+                <strong>Fig. 1 — Capture : menu de navigation invisible / masqué</strong>
+                <p>Illustre le problème de superposition CSS rencontré. Démontre la capacité à
+                identifier visuellement un dysfonctionnement d'interface et à le lier à une
+                propriété CSS spécifique (<code>z-index</code>).</p>
+              </div>
+            </div>
+            <div class="trace-card">
+              <span class="trace-icon">✅</span>
+              <div>
+                <strong>Fig. 2 — Capture : affichage correct du menu après correction CSS</strong>
+                <p>Prouve la résolution du problème et la maîtrise du modèle d'empilement CSS.
+                Le menu est fonctionnel et accessible sur l'ensemble des pages du site.</p>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="sae-block highlight-block">
           <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
           <div class="reflexive-grid">
-            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+            <div class="reflexive-item">
+              <span class="r-label">Difficultés rencontrées</span>
+              <p>
+                La difficulté principale était de comprendre pourquoi un élément pourtant présent dans
+                le HTML devenait invisible à l'écran. Le <code>z-index</code> est une propriété
+                dont l'effet dépend du contexte d'empilement parent, ce qui n'est pas évident
+                à déboguer sans comprendre le modèle de rendu CSS en profondeur.
+              </p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Solutions mises en place</span>
+              <p>
+                J'ai utilisé les outils de développement du navigateur (DevTools) pour inspecter
+                les propriétés CSS appliquées au menu et identifier la valeur de <code>z-index</code>
+                problématique. Cette approche m'a appris à utiliser les DevTools comme outil de
+                débogage standard, et non plus seulement pour visualiser le rendu.
+              </p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Ce que j'ai appris</span>
+              <p>
+                Cette SAÉ m'a donné une maîtrise concrète du cycle de développement web :
+                structure HTML, mise en forme CSS, débogage avec les DevTools, et ergonomie.
+                La résolution du bug de <code>z-index</code> m'a surtout appris à ne pas modifier
+                du CSS "à l'aveugle" mais à comprendre pourquoi une propriété produit un certain effet.
+              </p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Niveau de maîtrise</span>
+              <div class="mastery-bar">
+                <div class="mastery-fill" style="--level: 75%"></div>
+                <span class="mastery-label">Acquis — à approfondir (accessibilité, responsive)</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -439,41 +647,136 @@
         </div>
       </div>
       <div class="sae-body">
+
         <div class="sae-block">
           <h3 class="block-title">📋 Description &amp; Objectifs</h3>
-          <p class="placeholder-text">[Contexte et objectifs de la SAÉ 1.05]</p>
+          <p>
+            Cette SAÉ avait pour objectif de développer un script <strong>Python</strong> capable
+            de récupérer des données géographiques depuis l'<strong>API Overpass</strong>
+            (OpenStreetMap), de les traiter statistiquement, puis de générer automatiquement une
+            fiche d'informations locales exportée en <strong>Markdown</strong> puis en
+            <strong>HTML</strong>.
+          </p>
+          <p style="margin-top: 10px;">
+            Le cas d'usage concret portait sur l'extraction des parcs présents dans la ville de
+            Sfax. Le travail couvrait ainsi trois compétences clés du développeur RT : requêter
+            une API web, traiter des données JSON en Python, et générer automatiquement un document
+            de sortie formaté.
+          </p>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">🎯 Apprentissages Critiques mobilisés</h3>
           <div class="ac-grid">
-            <div class="ac-tag rt3"><code>AC13.01</code> Utiliser un système informatique</div>
+            <div class="ac-tag rt3"><code>AC13.01</code> Utiliser un système informatique et ses outils</div>
             <div class="ac-tag rt3"><code>AC13.02</code> Lire, exécuter, corriger un programme</div>
-            <div class="ac-tag rt3"><code>AC13.03</code> Traduire un algorithme</div>
-            <div class="ac-tag rt3"><code>AC13.04</code> Architecture et technologies Web</div>
             <div class="ac-tag rt3"><code>AC13.05</code> Mécanismes de gestion de données</div>
-            <div class="ac-tag rt3"><code>AC13.06</code> Environnement collaboratif</div>
           </div>
-          <p class="placeholder-text ac-desc">[Explique comment chaque AC a été mis en œuvre.]</p>
+          <div class="ac-detail-list">
+            <div class="ac-detail" style="border-left-color: var(--rt3);">
+              <span class="ac-detail-code" style="color: var(--rt3);">AC13.01</span>
+              <p>Le développement et l'exécution du script en Python depuis un terminal, la gestion
+              de l'arborescence de fichiers de sortie (<code>../html/</code>) et l'utilisation de
+              bibliothèques tierces constituent une utilisation avancée des outils informatiques
+              du développeur.</p>
+            </div>
+            <div class="ac-detail" style="border-left-color: var(--rt3);">
+              <span class="ac-detail-code" style="color: var(--rt3);">AC13.02</span>
+              <p>L'erreur <code>AttributeError: 'NoneType' object has no attribute 'get'</code>
+              a nécessité une lecture précise du traceback Python, une analyse du flux d'exécution
+              du programme (appel de <code>get_dataset()</code> → <code>compute_statistics()</code>)
+              et une correction ciblée : s'assurer que la fonction retournait bien
+              <code>response.json()</code>.</p>
+            </div>
+            <div class="ac-detail" style="border-left-color: var(--rt3);">
+              <span class="ac-detail-code" style="color: var(--rt3);">AC13.05</span>
+              <p>La récupération de données JSON depuis l'API Overpass, leur parsing en dictionnaire
+              Python, le calcul de statistiques sur les éléments extraits et la génération
+              automatique d'un fichier Markdown/HTML constituent une chaîne complète de traitement
+              de données — au cœur de cet apprentissage critique.</p>
+            </div>
+          </div>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">🔧 Tâches réalisées</h3>
-          <ul class="sae-list placeholder-text"><li>[Tâche 1]</li><li>[Tâche 2]</li></ul>
+          <ul class="sae-list">
+            <li>Développement d'un script Python interrogeant l'<strong>API Overpass</strong> pour récupérer les parcs de Sfax au format JSON</li>
+            <li>Implémentation d'une fonction <code>get_dataset()</code> effectuant la requête HTTP et renvoyant les données parsées</li>
+            <li>Implémentation d'une fonction <code>compute_statistics()</code> calculant des indicateurs sur les éléments récupérés</li>
+            <li>Diagnostic d'une erreur <code>AttributeError: 'NoneType'</code> : la variable <code>data</code> était <code>None</code> car la fonction ne renvoyait pas explicitement le résultat JSON</li>
+            <li>Démarche de débogage par étapes : ajout de <code>print("Status Code :", response.status_code)</code>, vérification du retour de <code>get_dataset()</code>, correction avec <code>return response.json()</code></li>
+            <li>Génération automatique d'une fiche au format Markdown puis conversion en HTML (<code>infos_locales.html</code>)</li>
+          </ul>
         </div>
+
         <div class="sae-block">
           <h3 class="block-title">📁 Résultats &amp; Traces</h3>
           <div class="traces-area">
-            <div class="trace-card placeholder-text"><span class="trace-icon">📄</span><div><strong>[Trace 1]</strong><p>[Description]</p></div></div>
+            <div class="trace-card">
+              <span class="trace-icon">🐛</span>
+              <div>
+                <strong>Fig. 1 — Capture : <code>AttributeError: 'NoneType' object has no attribute 'get'</code></strong>
+                <p>Trace du message d'erreur Python dans le terminal. Prouve la capacité à lire
+                un traceback et à localiser précisément l'instruction fautive dans le code
+                (<code>data.get("elements", [])</code> dans <code>compute_statistics()</code>).</p>
+              </div>
+            </div>
+            <div class="trace-card">
+              <span class="trace-icon">✅</span>
+              <div>
+                <strong>Fig. 2 — Capture : exécution correcte avec génération du fichier HTML</strong>
+                <p>Le terminal affiche <code>Status Code : 200</code> et
+                <code>Fiche infos_locales générée avec succès.</code> Atteste la maîtrise complète
+                de la chaîne : requête API → parsing JSON → calcul statistique → export HTML.</p>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="sae-block highlight-block">
           <h3 class="block-title">💬 Autoévaluation &amp; Analyse réflexive</h3>
           <div class="reflexive-grid">
-            <div class="reflexive-item"><span class="r-label">Difficultés rencontrées</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Solutions mises en place</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Ce que j'ai appris</span><p class="placeholder-text">[À compléter]</p></div>
-            <div class="reflexive-item"><span class="r-label">Niveau de maîtrise</span><div class="mastery-bar"><div class="mastery-fill" style="--level: 50%"></div><span class="mastery-label">En cours d'acquisition</span></div></div>
+            <div class="reflexive-item">
+              <span class="r-label">Difficultés rencontrées</span>
+              <p>
+                La difficulté principale était contre-intuitive : le code HTTP retournait 200 (succès),
+                ce qui m'a fait croire d'abord que le problème venait de l'API Overpass. En réalité,
+                l'erreur se trouvait dans mon propre code — la fonction <code>get_dataset()</code>
+                ne renvoyait rien (<code>return</code> manquant), donc <code>data</code> valait
+                toujours <code>None</code>.
+              </p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Solutions mises en place</span>
+              <p>
+                J'ai adopté une démarche de débogage par isolation : vérifier d'abord la réponse
+                HTTP, puis le contenu retourné par chaque fonction, avant de modifier quoi que ce
+                soit. Cette méthode m'a permis de localiser l'origine réelle du bug. Avec le recul,
+                j'ajouterais systématiquement des contrôles de type (<code>if data is None</code>)
+                avant tout traitement de données externes.
+              </p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Ce que j'ai appris</span>
+              <p>
+                Cette SAÉ m'a donné une expérience concrète de la consommation d'une API web en
+                Python et du cycle complet de traitement de données. Sur le plan du débogage, j'ai
+                compris qu'un code HTTP 200 ne garantit pas que les données sont correctement
+                transmises à travers le programme — il faut valider chaque maillon de la chaîne
+                de traitement, pas seulement la requête réseau.
+              </p>
+            </div>
+            <div class="reflexive-item">
+              <span class="r-label">Niveau de maîtrise</span>
+              <div class="mastery-bar">
+                <div class="mastery-fill" style="--level: 78%"></div>
+                <span class="mastery-label">Bien acquis — à approfondir (gestion d'erreurs robuste)</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
