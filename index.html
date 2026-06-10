@@ -22,7 +22,7 @@
       </div>
       <div class="sidebar-name">
         <span class="mono-label">étudiant</span>
-        <strong>[Ton Prénom Nom]</strong>
+        <strong>ABDULRAHMAN Hussein</strong>
         <span class="sidebar-sub">BUT RT – Parcours Cyber</span>
       </div>
     </div>
@@ -91,7 +91,7 @@
           <span class="mono-label">portfolio · BUT Réseaux &amp; Télécommunications</span>
         </div>
         <h1 class="hero-title">
-          <span id="typed-name">[Ton Prénom Nom]</span>
+          <span id="typed-name">ABDULRAHMAN Hussein</span>
           <span class="cursor">_</span>
         </h1>
         <p class="hero-subtitle" id="typed-subtitle"></p>
@@ -133,17 +133,20 @@
         <div class="profil-card">
           <h3 class="card-title">À propos</h3>
           <p class="placeholder-text">
-            [À compléter : présente-toi en quelques lignes – formation, pourquoi le parcours Cyber,
-            tes centres d'intérêt techniques, etc.]
+            Je m'appelle Hussein et je suis actuellement étudiant en deuxième année de BUT Réseaux et Télécommunications, parcours Cyber. Au cours de ma formation, j'ai développé des compétences en administration des réseaux, systèmes Linux, cybersécurité, développement web et programmation.
+J'ai choisi le parcours Cyber car je suis particulièrement intéressé par la sécurité des systèmes d'information, la protection des infrastructures réseau et l'identification des vulnérabilités. J'apprécie également les environnements Linux, les technologies réseau ainsi que l'automatisation à l'aide de scripts Python.
+Les différentes SAÉ réalisées durant ma formation m'ont permis de renforcer mes compétences techniques dans les domaines des réseaux, des systèmes et de la cybersécurité tout en développant mon autonomie, ma capacité d'analyse et ma méthode de résolution de problèmes.
+Mon objectif professionnel est de poursuivre mon évolution dans le domaine de la cybersécurité, de l'administration des systèmes et des réseaux, afin de contribuer à la sécurisation des infrastructures informatiques et à la protection des données.
+
           </p>
         </div>
 
         <div class="profil-card">
           <h3 class="card-title">Compétences principales</h3>
           <div class="skills-list">
-            <span class="skill-tag">[Compétence 1]</span>
-            <span class="skill-tag">[Compétence 2]</span>
-            <span class="skill-tag">[Compétence 3]</span>
+            <span class="skill-tag">reseau</span>
+            <span class="skill-tag">telecome</span>
+            <span class="skill-tag">programmation</span>
             <span class="skill-tag">À compléter</span>
           </div>
         </div>
@@ -252,6 +255,7 @@
               <span class="trace-icon">🖥️</span>
               <div>
                 <strong>Figure 1 — Capture d'écran : échec de connexion SSH</strong>
+                <img src="sae11-erreur-ssh.png" alt="">
                 <p>
                   Cette capture illustre le message d'erreur obtenu lors d'une tentative de connexion
                   avec <code>ssh utilisateur@adresse_ip</code> sans préciser le port. Elle prouve
@@ -263,7 +267,9 @@
             <div class="trace-card">
               <span class="trace-icon">✅</span>
               <div>
+                
                 <strong>Figure 2 — Capture d'écran : connexion SSH réussie</strong>
+                <img src="sae11-connexion-reussie.png" alt="">
                 <p>
                   Cette capture montre la connexion fonctionnelle obtenue après correction, via la
                   commande <code>ssh -p 3333 utilisateur@adresse_ip</code>. Elle démontre la
@@ -426,7 +432,9 @@
             <div class="trace-card">
               <span class="trace-icon">🖥️</span>
               <div>
+                
                 <strong>Fig. 1 — Échec de connexion HTTP (<code>curl</code> depuis le client)</strong>
+                <img src="sae12-apache-erreur.png" alt="">
                 <p>Démontre la capacité à identifier un problème d'accessibilité réseau et à
                 formuler une hypothèse sur sa cause (interface d'écoute restrictive).</p>
               </div>
@@ -434,7 +442,9 @@
             <div class="trace-card">
               <span class="trace-icon">✅</span>
               <div>
-                <strong>Fig. 2 — Accès réussi au serveur Apache après correction de <code>ports.conf</code></strong>
+                <strong>Fig. 2 — Accès réussi au serveur Apache après correction de 
+                  <code>ports.conf</code></strong>
+<img src="sae12-apache-ok.png" alt="">
                 <p>Atteste la maîtrise de la configuration d'un service web et la résolution
                 autonome d'un problème de disponibilité réseau.</p>
               </div>
@@ -443,6 +453,7 @@
               <span class="trace-icon">🖥️</span>
               <div>
                 <strong>Fig. 3 — Absence d'adresse IP sur le client (DHCP défaillant)</strong>
+                <img src="sae12-dhcp-erreur.png" alt="">
                 <p>Illustre l'utilisation de <code>ip a</code> comme outil de diagnostic réseau
                 et la lecture des logs système pour identifier l'origine du problème.</p>
               </div>
@@ -451,6 +462,7 @@
               <span class="trace-icon">✅</span>
               <div>
                 <strong>Fig. 4 — Attribution IP correcte après configuration IP statique serveur</strong>
+                <img src="sae12-dhcp-ok.png" alt="">
                 <p>Prouve la capacité à configurer un serveur DHCP fonctionnel sur Debian et
                 à relier la configuration réseau du serveur au bon fonctionnement du service.</p>
               </div>
@@ -575,6 +587,7 @@
               <span class="trace-icon">🖥️</span>
               <div>
                 <strong>Fig. 1 — Capture : menu de navigation invisible / masqué</strong>
+                <img src="image-site-erreur.png" alt="">
                 <p>Illustre le problème de superposition CSS rencontré. Démontre la capacité à
                 identifier visuellement un dysfonctionnement d'interface et à le lier à une
                 propriété CSS spécifique (<code>z-index</code>).</p>
@@ -584,6 +597,7 @@
               <span class="trace-icon">✅</span>
               <div>
                 <strong>Fig. 2 — Capture : affichage correct du menu après correction CSS</strong>
+                <img src="image-site-reussi.png" alt="">
                 <p>Prouve la résolution du problème et la maîtrise du modèle d'empilement CSS.
                 Le menu est fonctionnel et accessible sur l'ensemble des pages du site.</p>
               </div>
@@ -717,6 +731,7 @@
               <span class="trace-icon">🐛</span>
               <div>
                 <strong>Fig. 1 — Capture : <code>AttributeError: 'NoneType' object has no attribute 'get'</code></strong>
+                <img src="python-pas-reussi.png" alt="">
                 <p>Trace du message d'erreur Python dans le terminal. Prouve la capacité à lire
                 un traceback et à localiser précisément l'instruction fautive dans le code
                 (<code>data.get("elements", [])</code> dans <code>compute_statistics()</code>).</p>
@@ -726,6 +741,7 @@
               <span class="trace-icon">✅</span>
               <div>
                 <strong>Fig. 2 — Capture : exécution correcte avec génération du fichier HTML</strong>
+                <img src="image-site-reussi.png" alt="">
                 <p>Le terminal affiche <code>Status Code : 200</code> et
                 <code>Fiche infos_locales générée avec succès.</code> Atteste la maîtrise complète
                 de la chaîne : requête API → parsing JSON → calcul statistique → export HTML.</p>
